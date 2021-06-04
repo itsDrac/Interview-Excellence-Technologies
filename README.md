@@ -1,4 +1,8 @@
 # Excellence Technosoft Pvt. Ltd.
 ## Interview test questions
 
-Each question has it's own branch which has it's own README.md which explans little bit of code for that perticular question
+#### Question 1
+
+When you run `question1.py` it will print random 10 numbers and it's sum
+To list as input uncomment line `4-13` and comment line `1` and `3`
+
