@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block style %}
+{{ super() }}
+{% endblock style %}
+{% block body %}
+    <div class="container">
+        <div class="column col-md-12 col-6 col-mx-auto">
+            <div class="card">
+                <div class="card-head text-dark">
+                    <h1>Update Account</h1>
+                </div>
+                <form class="form-group" method="POST">
+                    {{ form.hidden_tag() }}
+                    <div class="card-body text-dark">
+                        {{ form.email.label(class="form-lable h4 my-2") }}
+                        {{ form.email(class="form-input my-2") }}
+                        {% if form.email.errors %}
+                        <ul class="toast toast-error">
+                            {% for error in form.email.errors %}<p>{{ error }}</p>{% endfor %}
+                        </ul>
+                        {% endif %}
+                        {{ form.update(class="btn btn-primary p-2") }}
+                    </div>
+                </form>
+            </div>
+        </div>
+     </div>
+{% endblock body %}
