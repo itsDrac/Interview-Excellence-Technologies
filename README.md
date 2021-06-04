@@ -1,4 +1,7 @@
 # Excellence Technosoft Pvt. Ltd.
 ## Interview test questions
 
-Each question has it's own branch which has it's own README.md which explans little bit of code for that perticular question
+#### Question 2
+
+When run `question2.py` from terminal it will first run `main` function in which I have set dummy values for `users` and `score`
+`main` function will call `max_score` which will return python dictionary where user id is key and  maximum score is value
