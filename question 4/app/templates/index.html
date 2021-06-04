@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+{% block style %}
+{{ super() }}
+{% endblock style %}
+{% block body %}
+    <div class="container">
+        <div class="col-6 col-mx-auto h1">
+            {% if current_user.is_authenticated %}
+            Hello {{ current_user.email }}
+            {% else %}
+            Hello World!
+            {% endif %}
+        </div>
+    </div>
+{% endblock body %}
